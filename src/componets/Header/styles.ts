@@ -4,6 +4,8 @@ const Container = styled.header`
   display: flex;
   align-items: center;
   justify-content: space-around;
+
+  border: 1px solid #d3d3d3;
 `;
 
 const Content = styled.div`

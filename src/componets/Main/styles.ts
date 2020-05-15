@@ -4,6 +4,8 @@ const Container = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+
+  border: 1px solid #d3d3d3;
 `;
 
 const Content = styled.main`
@@ -42,6 +44,11 @@ const Aside = styled.aside`
   ul {
     list-style: none;
     flex-direction: column;
+  }
+
+  li {
+    margin-bottom: 6px;
+    font-weight: bold;
   }
 `;
 
