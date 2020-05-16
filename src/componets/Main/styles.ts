@@ -12,7 +12,8 @@ const Content = styled.main`
   display: flex;
   align-items: center;
   justify-content: space-around;
-  width: 1200px;
+
+  width: 1250px;
 `;
 
 const Section = styled.section`
@@ -20,7 +21,7 @@ const Section = styled.section`
   align-items: center;
   justify-content: space-around;
 
-  width: 750px;
+  width: 100%;
   height: 175px;
 
   ul {
@@ -42,6 +43,7 @@ const Aside = styled.aside`
   justify-content: center;
 
   ul {
+    width: 200px;
     list-style: none;
     flex-direction: column;
   }
