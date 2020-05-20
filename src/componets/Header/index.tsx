@@ -43,7 +43,7 @@ const Header: React.FC = () => (
       <Content>
         <img src={Img} alt="perfil" />
 
-        <h1>César Costa</h1>
+        <h1>César Augusto Costa</h1>
         <h3>JS Developer</h3>
 
         <span>
