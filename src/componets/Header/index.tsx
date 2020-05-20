@@ -18,10 +18,10 @@ import { Container, Content, Aside, HeaderRow } from './styles';
 const Header: React.FC = () => (
   <>
     <HeaderRow>
-      <Link to="/portuguese">
+      <Link to="/">
         <img src={BR} alt="BR" />
       </Link>
-      <Link to="/english">
+      <Link to="/">
         <img src={UK} alt="UK" />
       </Link>
     </HeaderRow>
