@@ -51,6 +51,9 @@ const Aside = styled.aside`
   li {
     margin-bottom: 6px;
     font-weight: bold;
+    a {
+      text-decoration: none;
+    }
   }
 `;
 

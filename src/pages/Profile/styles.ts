@@ -9,8 +9,9 @@ const Container = styled.div`
   h3 {
     margin-left: 10px;
   }
-  article {
-    margin: 5px 5px 5px 20px;
+
+  blockquote {
+    font-weight: bold;
   }
 `;
 

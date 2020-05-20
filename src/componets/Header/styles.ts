@@ -5,7 +5,20 @@ const Container = styled.header`
   align-items: center;
   justify-content: space-around;
 
-  border: 1px solid #d3d3d3;
+  border: 1px 0px solid #d3d3d3;
+`;
+
+const HeaderRow = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+
+  img {
+    width: 50px;
+    height: 50px;
+    margin-right: 15px;
+    margin-top: 5px;
+  }
 `;
 
 const Content = styled.div`
@@ -21,8 +34,8 @@ const Content = styled.div`
   }
 
   img {
-    margin-top: 60px;
-    margin-bottom: 25px;
+    margin-top: 30px;
+    margin-bottom: 10px;
     width: 150px;
     height: 150px;
     border: 5px solid #d3d3d3;
@@ -33,6 +46,13 @@ const Content = styled.div`
 const Aside = styled.aside`
   display: flex;
   flex-direction: column;
+
+  a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+  }
 
   span {
     display: flex;
@@ -47,4 +67,4 @@ const Aside = styled.aside`
   }
 `;
 
-export { Container, Content, Aside };
+export { Container, Content, Aside, HeaderRow };
