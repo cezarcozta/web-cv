@@ -1,13 +1,5 @@
 import styled from 'styled-components';
 
-const Container = styled.header`
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-
-  border: 1px 0px solid #d3d3d3;
-`;
-
 const HeaderRow = styled.div`
   display: flex;
   align-items: center;
@@ -19,6 +11,15 @@ const HeaderRow = styled.div`
     margin-right: 15px;
     margin-top: 5px;
   }
+`;
+
+const Container = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+
+  border: 1px 0px solid #d3d3d3;
 `;
 
 const Content = styled.div`
@@ -43,9 +44,10 @@ const Content = styled.div`
   }
 `;
 
-const Aside = styled.aside`
+const Aside = styled.div`
   display: flex;
   flex-direction: column;
+  align-items: center;
 
   a {
     display: flex;

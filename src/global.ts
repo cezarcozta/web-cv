@@ -2,6 +2,7 @@ import styled from 'styled-components';
 
 const Container = styled.div`
   * {
+    display: flex;
     box-sizing: border-box;
     background: #1b1e23;
     color: #d3d3d3;
@@ -10,6 +11,11 @@ const Container = styled.div`
 
     text-rendering: optimizeLegibility !important;
     -webkit-font-smoothing: antialiased !important;
+  }
+
+  @media only screen and (max-width: 980px) {
+    flex-direction: column;
+    justify-content: flex-start;
   }
 `;
 

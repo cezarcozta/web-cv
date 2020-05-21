@@ -4,6 +4,7 @@ const Container = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+  flex: wrap;
 
   border: 1px solid #d3d3d3;
 `;
@@ -20,12 +21,14 @@ const Section = styled.section`
   display: flex;
   align-items: center;
   justify-content: space-around;
+  flex-wrap: wrap;
 
   width: 100%;
   height: 175px;
 
   ul {
     list-style: none;
+    flex-direction: column;
 
     li {
       display: flex;
@@ -51,6 +54,7 @@ const Aside = styled.aside`
   li {
     margin-bottom: 6px;
     font-weight: bold;
+
     a {
       text-decoration: none;
     }
