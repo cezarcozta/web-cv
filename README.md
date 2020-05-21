@@ -1,9 +1,9 @@
 ## Conception:  
-=> [Figma](https://www.figma.com/file/wwk4NgCCOCY44UNvp23cZo/web-responsive-cv.1.0?node-id=0%3A1)  
+ [Figma](https://www.figma.com/file/wwk4NgCCOCY44UNvp23cZo/web-responsive-cv.1.0?node-id=0%3A1)  
 ## Techs and Tools
-=> Js | HTML5 | CSS3 | React | Eslint | Prettier | Styled Components
+ Js | HTML5 | CSS3 | React | Eslint | Prettier | Styled Components
 ## Future Improves
-=> Portuguese Translate and Chevrons from Carrousel  
+ Portuguese Translate and Chevrons from Carrousel  
 ## ---------------------------------------------------------------------------  
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 

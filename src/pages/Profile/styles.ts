@@ -7,6 +7,7 @@ const Container = styled.div`
   margin: 5px 5px 5px 5px;
   @media only screen and (max-width: 640px) {
     flex-direction: column;
+    justify-content: flex-start;
   }
   h3 {
     margin-left: 10px;

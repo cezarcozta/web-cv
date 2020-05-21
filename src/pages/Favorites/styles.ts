@@ -5,6 +5,7 @@ const Container = styled.div`
   align-items: center;
   @media only screen and (max-width: 640px) {
     flex-direction: column;
+    justify-content: flex-start;
   }
 `;
 
