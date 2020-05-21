@@ -12,9 +12,7 @@ const App: React.FC = () => {
     <BrowserRouter>
       <Container>
         <Header />
-
         <Main />
-
         <Footer />
       </Container>
     </BrowserRouter>

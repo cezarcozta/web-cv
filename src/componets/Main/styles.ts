@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 const Container = styled.div`
-  display: flex;
+  flex: 1;
   align-items: center;
   justify-content: center;
   flex: wrap;
@@ -10,7 +10,6 @@ const Container = styled.div`
 `;
 
 const Content = styled.main`
-  display: flex;
   align-items: center;
   justify-content: space-around;
 
@@ -18,19 +17,16 @@ const Content = styled.main`
 `;
 
 const Section = styled.section`
-  display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
   flex-wrap: wrap;
-
-  width: 100%;
 
   ul {
     list-style: none;
     flex-direction: column;
+    flex: 1;
 
     li {
-      display: flex;
       align-items: center;
 
       svg {
@@ -41,11 +37,10 @@ const Section = styled.section`
 `;
 
 const Aside = styled.aside`
-  display: flex;
+  flex: 1;
   justify-content: center;
 
   ul {
-    width: 200px;
     list-style: none;
     flex-direction: column;
   }

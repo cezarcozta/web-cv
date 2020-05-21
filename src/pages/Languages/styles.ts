@@ -1,9 +1,8 @@
 import styled from 'styled-components';
 
 const Container = styled.div`
-  display: flex;
+  flex: 1;
   align-items: center;
-  flex-wrap: wrap;
 
   li {
     margin-bottom: 5px;
