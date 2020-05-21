@@ -24,7 +24,6 @@ const Section = styled.section`
   flex-wrap: wrap;
 
   width: 100%;
-  height: 175px;
 
   ul {
     list-style: none;
