@@ -10,10 +10,11 @@ const Container = styled.div`
 `;
 
 const Content = styled.main`
+  @media only screen and(max-width: 640px) {
+    flex-direction: column;
+  }
   align-items: center;
-  justify-content: space-around;
-
-  width: 1250px;
+  justify-content: center;
 `;
 
 const Section = styled.section`

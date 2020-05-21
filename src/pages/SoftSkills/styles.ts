@@ -4,6 +4,9 @@ const Container = styled.div`
   flex: 1;
   justify-content: center;
   align-items: center;
+  @media only screen and (max-width: 640px) {
+    flex-direction: column;
+  }
 
   li {
     font-weight: bold;

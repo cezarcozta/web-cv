@@ -8,17 +8,21 @@ import Container from './styles';
 const Languages: React.FC = () => {
   return (
     <Container>
-      <h3>LANGUAGES</h3>
-      <ul>
-        <li>
-          <img src={BR} alt="Portuguese" />
-          <span>Portuguese</span>
-        </li>
-        <li>
-          <img src={UK} alt="English" />
-          <span>English</span>
-        </li>
-      </ul>
+      <div>
+        <h3>LANGUAGES</h3>
+      </div>
+      <div>
+        <ul>
+          <li>
+            <img src={BR} alt="Portuguese" />
+            <span>Portuguese</span>
+          </li>
+          <li>
+            <img src={UK} alt="English" />
+            <span>English</span>
+          </li>
+        </ul>
+      </div>
     </Container>
   );
 };
