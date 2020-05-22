@@ -15,11 +15,6 @@ const Container = styled.div`
     text-rendering: optimizeLegibility !important;
     -webkit-font-smoothing: antialiased !important;
   }
-
-  @media only screen and (max-width: 980px) {
-    flex-direction: column;
-    justify-content: flex-start;
-  }
 `;
 
 export default Container;

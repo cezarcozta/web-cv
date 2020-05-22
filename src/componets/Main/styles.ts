@@ -6,15 +6,13 @@ const Container = styled.div`
   justify-content: center;
   flex: wrap;
 
-  border: 1px solid #d3d3d3;
+  border-bottom: 1px solid #d3d3d3;
 `;
 
 const Content = styled.main`
   @media only screen and(max-width: 640px) {
     flex-direction: column;
   }
-  align-items: center;
-  justify-content: center;
 `;
 
 const Section = styled.section`

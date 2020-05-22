@@ -4,6 +4,8 @@ const HeaderRow = styled.div`
   display: flex;
   align-items: center;
   justify-content: flex-end;
+  border-top: 0;
+  border-bottom: 0;
 
   img {
     width: 50px;
@@ -18,8 +20,7 @@ const Container = styled.div`
   align-items: center;
   justify-content: space-around;
   flex-wrap: wrap;
-
-  border: 1px 0px solid #d3d3d3;
+  border-bottom: 1px solid #d3d3d3;
 `;
 
 const Content = styled.div`
