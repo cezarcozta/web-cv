@@ -5,7 +5,7 @@ import { Container, Content } from './styles';
 const Footer: React.FC = () => (
   <Container>
     <Content>
-      <h5>Desenvolvido por: César Augusto Costa - &copy; Copyright 2020</h5>
+      <h5>Developed by: César Augusto Costa - &copy; Copyright 2020</h5>
     </Content>
   </Container>
 );

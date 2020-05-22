@@ -48,7 +48,7 @@ const Header: React.FC = () => (
 
         <span>
           <FaMapMarkerAlt size={30} />
-          Santo André - SP, Brasil
+          Santo André - SP, Brazil
         </span>
       </Content>
       <Aside>
