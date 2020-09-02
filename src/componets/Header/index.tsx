@@ -1,6 +1,5 @@
 import React, { useContext } from 'react';
 import { ThemeContext } from 'styled-components';
-import { Link } from 'react-router-dom';
 import Switch from 'react-switch';
 import { shade } from 'polished';
 
@@ -30,38 +29,31 @@ const Header: React.FC<Props> = ({ toggleTheme }) => {
       <HeaderRow>
         <Switch
           onChange={toggleTheme}
-          checked={name === 'light'}
+          checked={name === 'dark'}
           checkedIcon={false}
           uncheckedIcon={false}
           height={10}
           width={40}
-          onHandleColor={colors.primary}
-          className="switch"
           handleDiameter={20}
-          offColor={shade(0.15, colors.primary)}
-          onColor={colors.secundary}
+          offColor={shade(0.15, colors.secundary)}
+          onColor={colors.primary}
         />
         <div>
-          <Link to="/">
-            <img src={BR} alt="BR" />
-          </Link>
-          <Link to="/">
-            <img src={UK} alt="UK" />
-          </Link>
+          <img src={BR} alt="BR" />
+          <img src={UK} alt="UK" />
         </div>
       </HeaderRow>
+
       <Container>
         <Aside>
           <span>
             <a href="https://github.com/cezarcozta">
-              github.com/cezarcozta
-              <FaGithub size={30} />
+              <FaGithub size={75} />
             </a>
           </span>
           <span>
             <a href="https://twitter.com/cezarcozta">
-              twitter.com/cezarcozta
-              <FaTwitter size={30} />
+              <FaTwitter size={40} />
             </a>
           </span>
         </Aside>
@@ -79,14 +71,12 @@ const Header: React.FC<Props> = ({ toggleTheme }) => {
         <Aside>
           <span>
             <a href="https://www.linkedin.com/in/cezarcozta/">
-              <FaLinkedin size={30} />
-              linkedin.com/in/cezarcozta
+              <FaLinkedin size={75} />
             </a>
           </span>
 
           <span>
-            <FaEnvelope size={30} />
-            cezarcozta@gmail.com
+            <FaEnvelope size={40} />
           </span>
         </Aside>
       </Container>

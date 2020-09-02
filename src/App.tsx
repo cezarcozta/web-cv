@@ -12,20 +12,23 @@ import Main from './componets/Main';
 import Footer from './componets/Footer';
 
 const App: React.FC = () => {
-  const [theme, setTheme] = useState<DefaultTheme>(light);
+  const [theme, setTheme] = useState<DefaultTheme>(dark);
 
   const toggleTheme = useCallback(() => {
-    setTheme(theme.name === 'light' ? dark : light);
+    setTheme(theme.name === 'dark' ? light : dark);
   }, [theme]);
 
   return (
     <ThemeProvider theme={theme}>
       <GlobalStyle />
+
+      <Header toggleTheme={toggleTheme} />
+
       <BrowserRouter>
-        <Header toggleTheme={toggleTheme} />
         <Main />
-        <Footer />
       </BrowserRouter>
+
+      <Footer />
     </ThemeProvider>
   );
 };

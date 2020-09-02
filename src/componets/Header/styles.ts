@@ -4,8 +4,7 @@ const HeaderRow = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border-top: 0;
-  border-bottom: 0;
+  padding: 0 45px;
 
   img {
     width: 50px;
@@ -19,8 +18,7 @@ const Container = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-around;
-  flex-wrap: wrap;
-  border-bottom: 1px solid ${(props) => props.theme.colors.primary};
+  padding: 0 45px;
 `;
 
 const Content = styled.div`
@@ -29,14 +27,14 @@ const Content = styled.div`
   flex-direction: column;
 
   span {
-    margin: 25px;
+    margin: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
   }
 
   img {
-    margin-top: 30px;
+    margin-top: 35px;
     margin-bottom: 10px;
     width: 150px;
     height: 150px;
@@ -51,22 +49,13 @@ const Aside = styled.div`
   align-items: center;
 
   a {
-    display: flex;
-    align-items: center;
-    justify-content: center;
     text-decoration: none;
   }
 
   span {
-    display: flex;
-    align-items: center;
+    padding: 0 75px;
     font-weight: bold;
     margin-bottom: 50px;
-  }
-
-  svg {
-    margin-right: 10px;
-    margin-left: 10px;
   }
 `;
 

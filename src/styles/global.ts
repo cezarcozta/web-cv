@@ -11,13 +11,20 @@ export default createGlobalStyle`
   }
 
   body {
+    width: 100vw;
+    height: 100vh;
+
     display: flex;
-    align-items: center;
-    justify-content: center;
+    flex-direction: column;
+    align-items: space-between;
 
     background: ${(props) => props.theme.colors.background};
     font-size: 16px;
     color: ${(props) => props.theme.colors.text};
-    font-family: 400 16px Roboto, sans-serif;
+    font-family: 400 18px Roboto, sans-serif;
+
+    svg {
+      color: ${(props) => props.theme.colors.primary}
+    }
   }
 `;

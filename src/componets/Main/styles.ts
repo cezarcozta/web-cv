@@ -3,9 +3,7 @@ import styled from 'styled-components';
 const Container = styled.div`
   display: flex;
   align-items: center;
-  justify-content: center;
-
-  border-bottom: 1px solid ${(props) => props.theme.colors.primary};
+  justify-content: space-around;
 `;
 
 const Content = styled.main`
@@ -16,42 +14,8 @@ const Content = styled.main`
 
 const Section = styled.section`
   display: flex;
-  align-items: center;
-  justify-content: center;
-
-  ul {
-    list-style: none;
-    flex-direction: column;
-    flex: 1;
-
-    li {
-      align-items: center;
-
-      svg {
-        margin: 0 5px 5px 0;
-      }
-    }
-  }
+  align-items: space-around;
+  justify-content: space-around;
 `;
 
-const Aside = styled.aside`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  ul {
-    list-style: none;
-    flex-direction: column;
-  }
-
-  li {
-    margin-bottom: 6px;
-    font-weight: bold;
-
-    a {
-      text-decoration: none;
-    }
-  }
-`;
-
-export { Container, Content, Section, Aside };
+export { Container, Content, Section };
