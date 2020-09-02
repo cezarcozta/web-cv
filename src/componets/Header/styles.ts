@@ -3,7 +3,7 @@ import styled from 'styled-components';
 const HeaderRow = styled.div`
   display: flex;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: space-between;
   border-top: 0;
   border-bottom: 0;
 
@@ -20,7 +20,7 @@ const Container = styled.div`
   align-items: center;
   justify-content: space-around;
   flex-wrap: wrap;
-  border-bottom: 1px solid #d3d3d3;
+  border-bottom: 1px solid ${(props) => props.theme.colors.primary};
 `;
 
 const Content = styled.div`
@@ -40,7 +40,7 @@ const Content = styled.div`
     margin-bottom: 10px;
     width: 150px;
     height: 150px;
-    border: 5px solid #d3d3d3;
+    border: 5px solid ${(props) => props.theme.colors.primary};
     border-radius: 50%;
   }
 `;

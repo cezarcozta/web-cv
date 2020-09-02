@@ -1,12 +1,11 @@
 import styled from 'styled-components';
 
 const Container = styled.div`
-  flex: 1;
+  display: flex;
   align-items: center;
   justify-content: center;
-  flex: wrap;
 
-  border-bottom: 1px solid #d3d3d3;
+  border-bottom: 1px solid ${(props) => props.theme.colors.primary};
 `;
 
 const Content = styled.main`
@@ -16,9 +15,9 @@ const Content = styled.main`
 `;
 
 const Section = styled.section`
+  display: flex;
   align-items: center;
   justify-content: center;
-  flex-wrap: wrap;
 
   ul {
     list-style: none;
@@ -36,7 +35,8 @@ const Section = styled.section`
 `;
 
 const Aside = styled.aside`
-  flex: 1;
+  display: flex;
+  align-items: center;
   justify-content: center;
 
   ul {
