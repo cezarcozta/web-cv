@@ -2,6 +2,11 @@ import React from 'react';
 
 import { Container } from './styles';
 
+import Profile from '../../pages/Profile';
+// import Location from '../../pages/Location';
+// import Skills from '../../pages/Skills';
+// import Contacts from '../../pages/Contacts';
+
 const Nav: React.FC = () => {
   return (
     <Container>
@@ -14,6 +19,10 @@ const Nav: React.FC = () => {
           <li>Contacts</li>
         </ul>
       </nav>
+      <Profile />
+      {/* <Location />
+      <Skills />
+      <Contacts /> */}
     </Container>
   );
 };

@@ -1,54 +1,52 @@
 import React from 'react';
 
-import {
-  // FaGithub,
-  // FaTwitter,
-  // FaEnvelope,
-  // FaLinkedin,
-  FaMapMarkerAlt,
-} from 'react-icons/fa';
+import { FaGithub, FaTwitter, FaLinkedin, FaFacebook } from 'react-icons/fa';
 
 import Img from '../../assets/perfil.png';
 
-import Container from './styles';
+import {
+  Container,
+  Media,
+  Image,
+  Social,
+  Left,
+  Right,
+  GitHub,
+  Linkedin,
+  Facebook,
+  Twitter,
+} from './styles';
 
 const Profile: React.FC = () => {
+  const size = 75;
+
   return (
     <Container>
-      {/* <Aside>
-        <span>
-          <a href="https://github.com/cezarcozta">
-            <FaGithub size={75} />
-          </a>
-        </span>
-        <span>
-          <a href="https://twitter.com/cezarcozta">
-            <FaTwitter size={40} />
-          </a>
-        </span>
-      </Aside> */}
+      <Media>
+        <Image src={Img} />
+      </Media>
 
-      <img src={Img} alt="perfil" />
+      <Social>
+        <Left>
+          <GitHub href="https://github.com/cezarcozta">
+            <FaGithub size={size} />
+          </GitHub>
 
-      <h1>César Augusto Costa</h1>
-      <h3>JS Developer</h3>
+          <Linkedin href="https://www.linkedin.com/in/cezarcozta/">
+            <FaLinkedin size={size} />
+          </Linkedin>
+        </Left>
 
-      <span>
-        <FaMapMarkerAlt size={30} />
-        Santo André - SP, Brazil
-      </span>
+        <Right>
+          <Twitter href="https://twitter.com/cezarcozta">
+            <FaTwitter size={size} />
+          </Twitter>
 
-      {/* <Aside>
-        <span>
-          <a href="https://www.linkedin.com/in/cezarcozta/">
-            <FaLinkedin size={75} />
-          </a>
-        </span>
-
-        <span>
-          <FaEnvelope size={40} />
-        </span> 
-      </Aside> */}
+          <Facebook href="https://www.facebook.com/cezarcozta/">
+            <FaFacebook size={size} />
+          </Facebook>
+        </Right>
+      </Social>
     </Container>
   );
 };

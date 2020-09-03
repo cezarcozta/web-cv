@@ -1,5 +1,5 @@
 import React, { useCallback, useState } from 'react';
-// import { BrowserRouter } from 'react-router-dom';
+import { BrowserRouter } from 'react-router-dom';
 import { ThemeProvider, DefaultTheme } from 'styled-components';
 
 import dark from './styles/themes/dark';
@@ -8,9 +8,10 @@ import light from './styles/themes/light';
 import GlobalStyle from './styles/global';
 
 import Header from './components/Header';
-import Main from './components/Main';
 import Nav from './components/Nav';
 import Footer from './components/Footer';
+
+import Content from './components/Content';
 
 const App: React.FC = () => {
   const [theme, setTheme] = useState<DefaultTheme>(dark);
@@ -24,10 +25,10 @@ const App: React.FC = () => {
       <GlobalStyle />
 
       <Header toggleTheme={toggleTheme} />
-
       <Nav />
-
-      <Main />
+      {/* <BrowserRouter>
+        <Nav />
+      </BrowserRouter> */}
 
       {/* <BrowserRouter>
         <Main />

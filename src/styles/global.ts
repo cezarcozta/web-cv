@@ -14,10 +14,6 @@ export default createGlobalStyle`
     width: 100vw;
     height: 100vh;
 
-    display: flex;
-    flex-direction: column;
-    align-items: space-between;
-
     background: ${(props) => props.theme.colors.background};
     font-size: 16px;
     color: ${(props) => props.theme.colors.text};
