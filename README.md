@@ -7,7 +7,7 @@
 [![Netlify Status](https://api.netlify.com/api/v1/badges/6f0f8cd0-4f72-460b-8d87-5e5609ad7da6/deploy-status)](https://app.netlify.com/sites/cezarcozta/deploys)
 
   <img
-    src="https://github.com/cezarcozta/on-off/blob/master/src/assets/cezarcozta.gif"
+    src="https://github.com/cezarcozta/web-cv/blob/master/src/assets/cezarcozta.gif"
     alt ="cezarcozta.com"
   />
 </div>  
