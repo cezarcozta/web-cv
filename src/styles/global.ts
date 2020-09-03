@@ -22,5 +22,12 @@ export default createGlobalStyle`
     svg {
       color: ${(props) => props.theme.colors.primary};
     }
+
+    @media (max-width: 640px) {
+      width: 100vw;
+      height: 100vh;
+      font-size: 8px;
+      font-family: 100 18px Roboto, sans-serif;
+    }
   }
 `;
