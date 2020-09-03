@@ -15,8 +15,8 @@ export const Media = styled.aside`
 `;
 
 export const Image = styled.img`
-  width: 375px;
-  height: 375px;
+  width: 300px;
+  height: 300px;
   border-radius: 50%;
 
   border: 3px solid ${(props) => props.theme.colors.primary};
@@ -32,9 +32,12 @@ export const Social = styled.aside`
 
 export const Quote = styled.blockquote`
   margin-top: 12px;
-  font-size: 36px;
+  font-size: 28px;
   font-weight: bold;
-  color: ${(props) => props.theme.colors.text};
+  border-radius: 8px;
+  padding: 0 10px;
+  background: ${(props) => props.theme.colors.primary};
+  color: ${(props) => props.theme.colors.secundary};
 `;
 
 export const Left = styled.aside`

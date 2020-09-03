@@ -8,6 +8,7 @@ import {
   Container,
   Media,
   Image,
+  Quote,
   Social,
   Left,
   Right,
@@ -24,6 +25,7 @@ const Profile: React.FC = () => {
     <Container>
       <Media>
         <Image src={Img} />
+        <Quote>JS Full Stack Web Developer</Quote>
       </Media>
 
       <Social>

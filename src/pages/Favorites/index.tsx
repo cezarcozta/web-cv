@@ -6,7 +6,7 @@ import {
   FaBeer,
   FaTv,
   FaGamepad,
-  FaBookOpen,
+  FaBook,
 } from 'react-icons/fa';
 
 import { Container, Left, Center, Right, Text } from './styles';
@@ -17,7 +17,7 @@ const Favorites: React.FC = () => {
     <Container>
       <Left>
         <FaFilm size={size} />
-        <Text>Films</Text>
+        <Text>Animes</Text>
         <FaFutbol size={size} />
         <Text>Futbol</Text>
       </Left>
@@ -25,7 +25,7 @@ const Favorites: React.FC = () => {
       <Center>
         <FaTv size={size} />
         <Text>Codes</Text>
-        <FaBookOpen size={size} />
+        <FaBook size={size} />
         <Text>Books</Text>
       </Center>
 
