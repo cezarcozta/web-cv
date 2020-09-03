@@ -8,39 +8,38 @@ import {
   FaPhone,
 } from 'react-icons/fa';
 
-import { Container, Nav, NavList, NavLink } from './styles';
+import { Link } from 'react-router-dom';
+import Routes from '../../routes';
 
-import Profile from '../../pages/Profile';
-// import Location from '../../pages/Location';
-// import Skills from '../../pages/Skills';
-// import Contacts from '../../pages/Contacts';
+import { Container, Nav, NavList } from './styles';
 
 const NavBar: React.FC = () => {
   return (
     <Container>
       <Nav>
         <NavList>
-          <NavLink>
+          <Link to="/">
             <FaUser />
-          </NavLink>
+          </Link>
 
-          <NavLink>
+          <Link to="/location">
             <FaMapMarker />
-          </NavLink>
+          </Link>
 
-          <NavLink>
+          <Link to="/skills">
             <FaUserCog />
-          </NavLink>
+          </Link>
 
-          <NavLink>
+          <Link to="/favorites">
             <FaStar />
-          </NavLink>
+          </Link>
 
-          <NavLink>
+          <Link to="/contacts">
             <FaPhone />
-          </NavLink>
+          </Link>
         </NavList>
       </Nav>
+      <Routes />
       {/* <nav>
         <ul>
           <li>
@@ -60,8 +59,8 @@ const NavBar: React.FC = () => {
           </li>
         </ul>
       </nav> */}
-      <Profile />
-      {/* <Location />
+      {/* <Profile />
+       <Location />
       <Skills />
       <Contacts /> */}
     </Container>

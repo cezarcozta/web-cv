@@ -1,5 +1,5 @@
 import React, { useCallback, useState } from 'react';
-// import { BrowserRouter } from 'react-router-dom';
+import { BrowserRouter } from 'react-router-dom';
 import { ThemeProvider, DefaultTheme } from 'styled-components';
 
 import dark from './styles/themes/dark';
@@ -20,27 +20,15 @@ const App: React.FC = () => {
     setTheme(theme.name === 'dark' ? light : dark);
   }, [theme]);
 
-  // const navigation = {
-  //   brand: { name: 'Home', to: '/' },
-  //   links: [
-  //     { name: 'Profile', to: '/profile' },
-  //     { name: 'Contacts', to: '/profile' },
-  //   ],
-  // };
-
   return (
     <ThemeProvider theme={theme}>
       <GlobalStyle />
 
       <Header toggleTheme={toggleTheme} />
-      <NavBar />
-      {/* <BrowserRouter>
-        <Nav />
-      </BrowserRouter> */}
 
-      {/* <BrowserRouter>
-        <Main />
-      </BrowserRouter> */}
+      <BrowserRouter>
+        <NavBar />
+      </BrowserRouter>
 
       <Footer />
     </ThemeProvider>

@@ -17,6 +17,22 @@ export const Nav = styled.nav`
 export const NavList = styled.ul`
   margin-top: 25px;
   padding: 10px 25px;
+
+  a {
+    transition: 0.2s;
+    height: 10vh;
+    display: flex;
+    list-style: none;
+    font-weight: bold;
+    font-size: 38px;
+    :hover {
+      opacity: 0.2;
+    }
+
+    svg {
+      color: ${(props) => props.theme.colors.text};
+    }
+  }
 `;
 
 export const NavLink = styled.li`
