@@ -4,7 +4,7 @@ export const Container = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 45px;
+  padding: 15px 45px;
 
   .switch {
     padding: 0 15px;
@@ -15,8 +15,8 @@ export const Container = styled.div`
   }
 
   img {
-    width: 50px;
-    height: 50px;
+    width: 5vw;
+    height: 5vh;
     margin-right: 15px;
     margin-top: 5px;
   }

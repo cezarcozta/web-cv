@@ -8,17 +8,40 @@ import {
   FaPhone,
 } from 'react-icons/fa';
 
-import { Container } from './styles';
+import { Container, Nav, NavList, NavLink } from './styles';
 
 import Profile from '../../pages/Profile';
 // import Location from '../../pages/Location';
 // import Skills from '../../pages/Skills';
 // import Contacts from '../../pages/Contacts';
 
-const Nav: React.FC = () => {
+const NavBar: React.FC = () => {
   return (
     <Container>
-      <nav>
+      <Nav>
+        <NavList>
+          <NavLink>
+            <FaUser />
+          </NavLink>
+
+          <NavLink>
+            <FaMapMarker />
+          </NavLink>
+
+          <NavLink>
+            <FaUserCog />
+          </NavLink>
+
+          <NavLink>
+            <FaStar />
+          </NavLink>
+
+          <NavLink>
+            <FaPhone />
+          </NavLink>
+        </NavList>
+      </Nav>
+      {/* <nav>
         <ul>
           <li>
             <FaUser size={30} />
@@ -36,7 +59,7 @@ const Nav: React.FC = () => {
             <FaPhone size={30} />
           </li>
         </ul>
-      </nav>
+      </nav> */}
       <Profile />
       {/* <Location />
       <Skills />
@@ -45,4 +68,4 @@ const Nav: React.FC = () => {
   );
 };
 
-export default Nav;
+export default NavBar;
