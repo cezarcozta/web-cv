@@ -5,9 +5,16 @@ export const Container = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 200vh;
+  width: 200vw;
 
   h1 {
     margin-top: 10vh;
+  }
+
+  a {
+    :hover {
+      opacity: 0.6;
+    }
+    transition: 0.2s;
   }
 `;

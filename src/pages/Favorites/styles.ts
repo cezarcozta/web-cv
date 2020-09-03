@@ -1,12 +1,38 @@
 import styled from 'styled-components';
 
-const Container = styled.div`
-  flex: 1;
+export const Container = styled.div`
+  display: flex;
+  justify-content: center;
   align-items: center;
-  @media only screen and (max-width: 640px) {
-    flex-direction: column;
-    justify-content: flex-start;
+  width: 200vw;
+
+  svg {
+    margin-top: 4vh;
   }
 `;
 
-export default Container;
+export const Text = styled.p`
+  color: ${(props) => props.theme.colors.text};
+  margin-top: 1vh;
+  font-weight: bold;
+`;
+
+export const Left = styled.aside`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 45px;
+`;
+
+export const Center = styled.main`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+`;
+
+export const Right = styled.aside`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 45px;
+`;

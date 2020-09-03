@@ -5,7 +5,14 @@ export const Container = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 200vh;
+  width: 200vw;
+
+  a {
+    :hover {
+      opacity: 0.6;
+    }
+    transition: 0.2s;
+  }
 
   h1 {
     margin-top: 50px;

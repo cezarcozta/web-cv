@@ -3,46 +3,38 @@ import React from 'react';
 import {
   FaFilm,
   FaFutbol,
-  FaCocktail,
+  FaBeer,
   FaTv,
   FaGamepad,
   FaBookOpen,
 } from 'react-icons/fa';
 
-import Container from './styles';
+import { Container, Left, Center, Right, Text } from './styles';
 
 const Favorites: React.FC = () => {
+  const size = 100;
   return (
     <Container>
-      <h3>FAVORITES</h3>
-      <ul>
-        <li>
-          <FaFilm size={30} />
-          <p>Movies</p>
-        </li>
-        <li>
-          <FaTv size={30} />
-          <p>TV Shows</p>
-        </li>
-        <li>
-          <FaGamepad size={30} />
-          <p>Games</p>
-        </li>
-      </ul>
-      <ul>
-        <li>
-          <FaBookOpen size={30} />
-          <p>Books</p>
-        </li>
-        <li>
-          <FaCocktail size={30} />
-          <p>Drinks</p>
-        </li>
-        <li>
-          <FaFutbol size={30} />
-          <p>Soccer</p>
-        </li>
-      </ul>
+      <Left>
+        <FaFilm size={size} />
+        <Text>Films</Text>
+        <FaFutbol size={size} />
+        <Text>Futbol</Text>
+      </Left>
+
+      <Center>
+        <FaTv size={size} />
+        <Text>Codes</Text>
+        <FaBookOpen size={size} />
+        <Text>Books</Text>
+      </Center>
+
+      <Right>
+        <FaBeer size={size} />
+        <Text>Beer</Text>
+        <FaGamepad size={size} />
+        <Text>Games</Text>
+      </Right>
     </Container>
   );
 };

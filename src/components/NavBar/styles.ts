@@ -30,7 +30,7 @@ export const NavList = styled.ul`
     }
 
     svg {
-      color: ${(props) => props.theme.colors.text};
+      color: ${(props) => props.theme.colors.secundary};
     }
   }
 `;
