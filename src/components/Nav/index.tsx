@@ -1,5 +1,13 @@
 import React from 'react';
 
+import {
+  FaUser,
+  FaMapMarker,
+  FaUserCog,
+  FaStar,
+  FaPhone,
+} from 'react-icons/fa';
+
 import { Container } from './styles';
 
 import Profile from '../../pages/Profile';
@@ -12,11 +20,21 @@ const Nav: React.FC = () => {
     <Container>
       <nav>
         <ul>
-          <li>Profile</li>
-          <li>Location</li>
-          <li>Skills</li>
-          <li>Favorites</li>
-          <li>Contacts</li>
+          <li>
+            <FaUser size={30} />
+          </li>
+          <li>
+            <FaMapMarker size={30} />
+          </li>
+          <li>
+            <FaUserCog size={30} />
+          </li>
+          <li>
+            <FaStar size={30} />
+          </li>
+          <li>
+            <FaPhone size={30} />
+          </li>
         </ul>
       </nav>
       <Profile />

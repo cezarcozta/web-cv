@@ -14,9 +14,12 @@ export const Container = styled.div`
       li {
         height: 10vh;
         list-style: none;
-        color: ${(props) => props.theme.colors.text};
         font-weight: bold;
         font-size: 38px;
+
+        svg {
+          color: ${(props) => props.theme.colors.text};
+        }
       }
     }
   }

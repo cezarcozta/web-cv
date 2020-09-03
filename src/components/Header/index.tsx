@@ -6,7 +6,7 @@ import { shade } from 'polished';
 import BR from '../../assets/BR.svg';
 import UK from '../../assets/UK.svg';
 
-import { HeaderRow } from './styles';
+import { Container } from './styles';
 
 interface Props {
   toggleTheme(): void;
@@ -16,25 +16,24 @@ const Header: React.FC<Props> = ({ toggleTheme }) => {
   const { colors, name } = useContext(ThemeContext);
 
   return (
-    <>
-      <HeaderRow>
-        <Switch
-          onChange={toggleTheme}
-          checked={name === 'dark'}
-          checkedIcon={false}
-          uncheckedIcon={false}
-          height={10}
-          width={40}
-          handleDiameter={20}
-          offColor={shade(0.15, colors.secundary)}
-          onColor={colors.primary}
-        />
-        <div>
-          <img src={BR} alt="BR" />
-          <img src={UK} alt="UK" />
-        </div>
-      </HeaderRow>
-    </>
+    <Container>
+      <Switch
+        className="switch"
+        onChange={toggleTheme}
+        checked={name === 'dark'}
+        checkedIcon={false}
+        uncheckedIcon={false}
+        height={10}
+        width={40}
+        handleDiameter={20}
+        offColor={shade(0.15, colors.secundary)}
+        onColor={colors.primary}
+      />
+      <div className="flags">
+        <img src={BR} alt="BR" />
+        <img src={UK} alt="UK" />
+      </div>
+    </Container>
   );
 };
 
