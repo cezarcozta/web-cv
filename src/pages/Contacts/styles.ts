@@ -17,4 +17,14 @@ export const Container = styled.div`
     }
     transition: 0.2s;
   }
+  @media (max-width: 640px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    h1 {
+      margin-top: 1vh;
+    }
+  }
 `;

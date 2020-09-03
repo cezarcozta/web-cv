@@ -9,6 +9,14 @@ export const Container = styled.div`
   svg {
     margin-top: 4vh;
   }
+
+  @media (max-width: 640px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 50vh;
+  }
 `;
 
 export const Text = styled.p`

@@ -5,13 +5,22 @@ export const Container = styled.div`
   justify-content: center;
   align-items: center;
   padding: 0 45px;
-  height: 75vh;
-  width: 100vw;
+
+  @media (max-width: 640px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 `;
 
 export const Nav = styled.nav`
   background: ${(props) => props.theme.colors.primary};
   border-radius: 8px;
+
+  @media (max-width: 640px) {
+    height: 12vh;
+  }
 `;
 
 export const NavList = styled.ul`
@@ -31,6 +40,16 @@ export const NavList = styled.ul`
 
     svg {
       color: ${(props) => props.theme.colors.secundary};
+    }
+  }
+
+  @media (max-width: 640px) {
+    display: flex;
+
+    a {
+      justify-content: center;
+      font-size: 24px;
+      width: 10vw;
     }
   }
 `;

@@ -5,6 +5,11 @@ export const Container = styled.div`
   justify-content: center;
   align-items: center;
   width: 200vh;
+
+  @media (max-width: 640px) {
+    flex-direction: column;
+    margin-top: 30px;
+  }
 `;
 
 export const Hard = styled.aside`
@@ -12,6 +17,10 @@ export const Hard = styled.aside`
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  @media (max-width: 640px) {
+    height: 45vh;
+  }
 `;
 
 export const Soft = styled.aside`
@@ -19,6 +28,10 @@ export const Soft = styled.aside`
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  @media (max-width: 640px) {
+    margin-top: 5vh;
+  }
 `;
 
 export const HardItem = styled.div`
@@ -55,4 +68,8 @@ export const Text = styled.span`
   font-size: 22px;
   font-weight: bold;
   margin: 0 10px 5px;
+
+  @media (max-width: 640px) {
+    width: 50vw;
+  }
 `;

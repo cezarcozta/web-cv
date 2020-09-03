@@ -16,7 +16,7 @@ import { Container, Nav, NavList } from './styles';
 const NavBar: React.FC = () => {
   return (
     <Container>
-      <Nav>
+      <Nav className="nav">
         <NavList>
           <Link to="/">
             <FaUser />

@@ -20,7 +20,7 @@ export default createGlobalStyle`
     font-family: 400 18px Roboto, sans-serif;
 
     svg {
-      color: ${(props) => props.theme.colors.primary}
+      color: ${(props) => props.theme.colors.primary};
     }
   }
 `;

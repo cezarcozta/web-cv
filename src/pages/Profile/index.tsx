@@ -19,13 +19,13 @@ import {
 } from './styles';
 
 const Profile: React.FC = () => {
-  const size = 75;
+  const size = 65;
 
   return (
     <Container>
       <Media>
         <Image src={Img} />
-        <Quote>JS Full Stack Web Developer</Quote>
+        <Quote>Javascript Developer</Quote>
       </Media>
 
       <Social>
