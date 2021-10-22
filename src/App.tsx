@@ -1,17 +1,23 @@
 import React, { useCallback, useState } from 'react';
 import { BrowserRouter } from 'react-router-dom';
-import { ThemeProvider, DefaultTheme } from 'styled-components';
-
+import { ThemeProvider } from 'styled-components';
+import Footer from './components/Footer';
+import Header from './components/Header';
+import NavBar from './components/NavBar';
+import GlobalStyle from './styles/global';
 import dark from './styles/themes/dark';
 import light from './styles/themes/light';
 
-import GlobalStyle from './styles/global';
+interface DefaultTheme {
+  name: string;
 
-import Header from './components/Header';
-import NavBar from './components/NavBar';
-import Footer from './components/Footer';
-
-// import Content from './components/Content';
+  colors: {
+    primary: string;
+    secundary: string;
+    background: string;
+    text: string;
+  };
+}
 
 const App: React.FC = () => {
   const [theme, setTheme] = useState<DefaultTheme>(dark);
